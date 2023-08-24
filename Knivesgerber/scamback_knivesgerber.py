@@ -34,7 +34,7 @@ def scam_back():
     payload = {
         'username': email.lower(),
         'password': password,
-        'woocommerce-login-nonce': '96db31b340',
+        'woocommerce-login-nonce': 'c74274b91b',
         '_wp_http_referer': '/my-account/',
         'login': 'Log in'
     }
