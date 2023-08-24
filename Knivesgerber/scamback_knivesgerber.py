@@ -26,7 +26,7 @@ user_agent_list = [
 
 
 def scam_back():
-    email = names.get_full_name().replace(" ", ".") + "@" + random.choice(email_provider)
+    email = names.get_full_name().replace(" ", ".") + str(random.randint(100, 999)).zfill(3) + "@" + random.choice(email_provider)
     password = ''.join(random.choice(string.ascii_letters) for i in range(random.randint(8, 12)))
     user_agent = random.choice(user_agent_list)
     headers = {'User-Agent': user_agent}
